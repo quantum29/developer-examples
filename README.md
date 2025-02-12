@@ -7,7 +7,7 @@ Enjoy our curated collection of examples and solutions. Use these patterns to in
 We're going to be shipping new examples weekly. Stay tuned!
 
 - [Visual Embed](/visual-embed) – Drop in ThoughtSpot Analytics components (Plain JS/React) for your web apps. [Learn more.](https://developers.thoughtspot.com/docs/getting-started)
-- [REST APIs](/rest-apis) – Headless AI for BI, the power of ThoughtSpot's platform via APIs. [Learn more.](https://developers.thoughtspot.com/docs/rest-apis)
+- [REST APIs](/rest-api) – Headless AI for BI, the power of ThoughtSpot's platform via APIs. [Learn more.](https://developers.thoughtspot.com/docs/rest-apis)
 - [Solutions](/solutions) – Demos, Architectures, and Best Practices
 - [Starter](/starter) – Fully functional applications that encompass an idea as a robust starting point.
 
