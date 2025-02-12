@@ -6,7 +6,7 @@ This is a react.js application.  See the `src/examples` folder for specific exam
 
 ## Demo
 
-Open in [CodeSandbox](https://codesandbox.io/p/sandbox/github/thoughtspot/tree/main/visual-embed/custom-actions)
+Open in [CodeSandbox](https://codesandbox.io/p/sandbox/github/thoughtspot/developer-examples/tree/main/visual-embed/custom-actions)
 
 ## Documentation
 
