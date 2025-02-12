@@ -1,4 +1,4 @@
-# tse_custom_action_examples
+# Custom Actions
 
 This repository contains multiple examples of using ThoughtSpot [Custom Actions](https://developers.thoughtspot.com/docs/?pageid=customize-actions). A custom action is a type of extension that can be added to ThoughtSpot searches, answers and liveboards to give users additional capabilities. For example, an inventory manager might search ThoughtSpot for items that are low in stock and push a reorder directly from ThoughtSpot to their inventory system.
 
