@@ -11,8 +11,12 @@ We're going to be shipping new examples weekly. Stay tuned!
 - [Solutions](/solutions) – Demos, Architectures, and Best Practices
 - [Starter](/starter) – Fully functional applications that encompass an idea as a robust starting point.
 
+<br/>
+<br/>
 
 ### Contributing
+
+Relevant mostly for ThoughtSpot employees and partners.
 
 #### Adding a new example
 
@@ -23,7 +27,7 @@ npm i
 npm run new-example
 ```
 
-All must comply with the following format:
+All examples must comply with the following format:
 
 - It must have a `.gitignore` similar to [plop-templates/example/.gitignore](./plop-templates/example/.gitignore)
 - It must have a `package.json` similar to [plop-templates/example/package.json](./plop-templates/example/package.json). The license should be `MIT`
