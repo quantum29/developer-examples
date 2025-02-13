@@ -3,6 +3,9 @@
     <h3 align="center">ThoughtSpot Developer Examples</h3>
 </p>
 
+<br />
+<br />
+
 Enjoy our curated collection of examples and solutions. Use these patterns to integrate robust and scalable analytics into your own applications with ThoughtSpot.
 We're going to be shipping new examples weekly. Stay tuned!
 
