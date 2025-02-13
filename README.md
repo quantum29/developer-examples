@@ -19,6 +19,9 @@ We're going to be shipping new examples weekly. Stay tuned!
 
 Relevant mostly for ThoughtSpot employees and partners.
 
+- All Web examples are in Typescript + Vite.
+- All Backend examples in Typescript (no javascript), or other languages.
+
 #### Adding a new example
 
 To quickly start contributing with a new example, run the following commands:
@@ -36,7 +39,7 @@ All examples must comply with the following format:
     - A codesandbox demo URL (all examples are viewable as a codesandbox at `https://githubbox.com/thoughtspot/developer-examples/tree/main/<path>/<to>/<example>`).
 
     - Link to the relevant documentation for the features the examples is trying to showcase.
-    
+
     - If it requires environment variables, it must have a `.env` file and instructions on how to set them up.
 
 - [Javascript] It must have a `package.json` similar to [utilities/plop-templates/ts/package.json](./utilities/plop-templates/ts/package.json). The license should be `MIT`
