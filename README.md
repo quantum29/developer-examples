@@ -20,6 +20,7 @@ We're going to be shipping new examples weekly. Stay tuned!
 Relevant mostly for ThoughtSpot employees and partners.
 
 - All Web examples are in Typescript + Vite.
+    - Examples must run with the latest version of the [Visual Embed SDK](https://www.npmjs.com/package/@thoughtspot/visual-embed-sdk).   
 - All Backend examples in Typescript (no javascript), or other languages.
 
 #### Adding a new example
