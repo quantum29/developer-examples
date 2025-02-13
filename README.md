@@ -30,9 +30,13 @@ npm run new-example
 
 All examples must comply with the following format:
 
-- It must have a `.gitignore` similar to [plop-templates/example/.gitignore](./plop-templates/example/.gitignore)
-- It must have a `package.json` similar to [plop-templates/example/package.json](./plop-templates/example/package.json). The license should be `MIT`
-- It must have a `README.md` similar to [plop-templates/example/README.md](./plop-templates/example/README.md). The example has to be able to include the following:
+- It must have a `.gitignore` similar to [utilities/plop-templates/ts/.gitignore](./utilities/plop-templates/ts/.gitignore)
+
+- It must have a `README.md` similar to [utilities/plop-templates/ts/README.md](./plop-templates/example/README.md). The example has to be able to include the following:
     - A codesandbox demo URL (all examples are viewable as a codesandbox at `https://githubbox.com/thoughtspot/developer-examples/tree/main/<path>/<to>/<example>`).
+
     - Link to the relevant documentation for the features the examples is trying to showcase.
+    
     - If it requires environment variables, it must have a `.env` file and instructions on how to set them up.
+
+- [Javascript] It must have a `package.json` similar to [utilities/plop-templates/ts/package.json](./utilities/plop-templates/ts/package.json). The license should be `MIT`
