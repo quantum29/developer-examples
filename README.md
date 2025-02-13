@@ -38,7 +38,7 @@ All examples must comply with the following format:
 - It must have a `README.md` similar to [utilities/plop-templates/ts/README.md](./plop-templates/example/README.md). The example has to include the following:
     - A codesandbox demo URL (all examples are viewable as a codesandbox at `https://githubbox.com/thoughtspot/developer-examples/tree/main/<path>/<to>/<example>`).
 
-    - Link to the relevant documentation for the features the examples is trying to showcase.
+    - Link to the relevant documentation for the features, the example is trying to showcase.
 
     - If it requires environment variables, it must have a `.env` file and instructions on how to set them up.
 
