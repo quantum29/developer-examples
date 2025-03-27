@@ -2,9 +2,17 @@ import { BodylessConversation, init, AuthType } from "@thoughtspot/visual-embed-
 import { Spin } from "antd";
 import React from "react";
 
+const TOKEN_SERVER = import.meta.env.VITE_TOKEN_SERVER;
+const USERNAME = import.meta.env.VITE_USERNAME;
+export const TOKEN_ENDPOINT = `${TOKEN_SERVER}/api/gettoken/${USERNAME}`;
+
 init({
     thoughtSpotHost: import.meta.env.VITE_THOUGHTSPOT_HOST,
-    authType: AuthType.None,
+    authType: AuthType.TrustedAuthTokenCookieless,
+    getAuthToken: async () => {
+        const response = await fetch(TOKEN_ENDPOINT);
+        return response.text();
+    }
 });
 
 const conversation = new BodylessConversation({
