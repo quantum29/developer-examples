@@ -1,20 +1,18 @@
-# ThoughtSpot Agentic Deep Analysis
+# ThoughtSpot Query Decomposition
 
 This application demonstrates the integration of ThoughtSpot with an AI agent that can analyze your data and provide insights through a conversational interface.
 
 ## Features
 
 - Interactive chat interface with streaming responses
-- Integration with ThoughtSpot data
-- Modern UI built with Ant Design components
+- Integration with ThoughtSpot data APIs
+- ThoughtSpot Query decomposition APIs to decompose high level topical questions into data questions.
 - Real-time data analysis and insights
 
-## Prerequisites
+## Demo
 
-- Node.js (v16 or higher)
-- npm or yarn
-- ThoughtSpot instance with API access
-- Google Generative AI API key
+Open in [Codesandbox](https://githubbox.com/thoughtspot/developer-examples/tree/main/visual-embed/query-decomposition)
+
 
 ## Getting Started
 
@@ -83,10 +81,6 @@ npm run dev
 - Express
 - Google Generative AI
 - ThoughtSpot REST API SDK
-
-## Demo
-
-Open in [Codesandbox](https://githubbox.com/thoughtspot/developer-examples/tree/main/visual-embed/agentic-deep-analysis)
 
 ## Documentation
 
