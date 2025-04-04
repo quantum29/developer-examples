@@ -12,6 +12,6 @@
 7. [Spotter](./spotter)
     - [Simple Spotter](./spotter/spotter-embed)
     - [Spotter single query agent](./spotter/spotter-agent-embed)
-    - [Spotter Multiquery agent](./spotter/agentic-deep-analysis/)
+    - [Spotter Multiquery agent](./spotter/query-decomposition/)
 8. [Style customizations](./style-customizations/)
 9. [Visualization](./visualization/)
