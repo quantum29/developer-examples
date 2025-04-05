@@ -7,4 +7,5 @@
 3. [Typescript API SDK](./typescript-sdk/)
   - [Express](./typescript-sdk/express-example/)
   - [React](./typescript-sdk/react-rest-api/)
+4. [Trusted auth server](./trusted-auth-server/)
 
