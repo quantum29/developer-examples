@@ -9,9 +9,17 @@ interface LiveboardProps {
 }
 
 const THOUGHTSPOT_HOST: string = import.meta.env.VITE_THOUGHTSPOT_HOST || "";
+const USERNAME = import.meta.env.VITE_THOUGHTSPOT_USERNAME || "";
+const TOKEN_SERVER = import.meta.env.VITE_TOKEN_SERVER || "";
+const TOKEN_ENDPOINT = `${TOKEN_SERVER}/api/gettoken/${USERNAME}`;
+
 init({
     thoughtSpotHost: THOUGHTSPOT_HOST,
-    authType: AuthType.None // Adjust based on your authentication needs
+    authType: AuthType.TrustedAuthTokenCookieless,
+    getAuthToken: async () => {
+      const response = await fetch(TOKEN_ENDPOINT);
+      return response.text();
+    }
 });
 
 const Liveboard: React.FC<LiveboardProps> = ({
