@@ -5,13 +5,16 @@ const TOKEN_SERVER = process.env.VITE_TOKEN_SERVER;
 const USERNAME = process.env.VITE_USERNAME;
 const THOUGHTSPOT_HOST: string = process.env.VITE_THOUGHTSPOT_HOST || "";
 const TOKEN_ENDPOINT = `${TOKEN_SERVER}/api/gettoken/${USERNAME}`;
-
+const BEARER_TOKEN = process.env.VITE_TS_BEARER_TOKEN;
 
 let token;
 
 export const thoughtSpotClient = new ThoughtSpotRestApi(createBearerAuthenticationConfig(
   THOUGHTSPOT_HOST,
   async () => {
+    if (BEARER_TOKEN) {
+      return BEARER_TOKEN;
+    }
     const response = await fetch(TOKEN_ENDPOINT);
     token = await response.text();
     return token;

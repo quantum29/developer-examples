@@ -11,7 +11,7 @@ This application demonstrates the integration of ThoughtSpot with an AI agent th
 
 ## Demo
 
-Open in [Codesandbox](https://githubbox.com/thoughtspot/developer-examples/tree/main/visual-embed/query-decomposition)
+Open in [Codesandbox](https://githubbox.com/thoughtspot/developer-examples/tree/main/visual-embed/spotter/query-decomposition)
 
 
 ## Getting Started
@@ -24,11 +24,12 @@ npm install
 ```
 
 3. Set up environment variables:
-   Create a `.env` file in the root directory with the following variables:
+   Update the `.env` file in the root directory with the following variables:
    ```
    GEMINI_API_KEY=your_gemini_api_key
    VITE_THOUGHTSPOT_HOST=your_thoughtspot_host
    VITE_TOKEN_SERVER=your_token_server
+   VITE_TS_BEARER_TOKEN=your_bearer_token (if not providing token server)
    VITE_TS_DATASOURCE_ID=your_datasource_id
    VITE_USERNAME=your_username
    ```
@@ -91,7 +92,7 @@ npm run dev
 
 ```
 $ git clone https://github.com/thoughtspot/developer-examples
-$ cd visual-embed/agentic-deep-analysis
+$ cd visual-embed/spotter/query-decomposition
 ```
 ```
 $ npm i
