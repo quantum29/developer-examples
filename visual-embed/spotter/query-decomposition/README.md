@@ -33,6 +33,7 @@ npm install
    VITE_TS_DATASOURCE_ID=your_datasource_id
    VITE_USERNAME=your_username
    ```
+   See [How to get bearer token](#how-to-get-the-bearer-token)
 
 4. Start both the frontend and backend servers:
 
@@ -51,6 +52,16 @@ npm run dev
 ```
 
 5. Open your browser and navigate to `http://localhost:5173`
+
+### How to get the bearer token.
+  - Go to ThoughtSpot => Develop => Rest Playground v2.0
+  - Authentication => Get Full access token
+  - Scroll down and expand the "body"
+  - Add your "username" and "password".
+  - Put whatever "validity_time" you want the token to be.
+  - Click on "Try it out" on the bottom right.
+  - You should get a token in the response, thats the bearer token. 
+
 
 ## Project Structure
 
