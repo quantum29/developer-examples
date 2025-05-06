@@ -7,7 +7,7 @@ const THOUGHTSPOT_HOST: string = process.env.VITE_THOUGHTSPOT_HOST || "";
 const TOKEN_ENDPOINT = `${TOKEN_SERVER}/api/gettoken/${USERNAME}`;
 const BEARER_TOKEN = process.env.VITE_TS_BEARER_TOKEN;
 
-let token;
+let token = BEARER_TOKEN;
 
 export const thoughtSpotClient = new ThoughtSpotRestApi(createBearerAuthenticationConfig(
   THOUGHTSPOT_HOST,

@@ -28,7 +28,7 @@ async function getAnswersForQuestions(questions: string[], streamCb: (data: any)
         })
     )).filter((answer): answer is NonNullable<typeof answer> => answer !== null);
 
-    streamCb(`\n\nRetrieved ${answers.length} answers using **ThougghtSpot Spotter**\n\n`);
+    streamCb(`\n\nRetrieved ${answers.length} answers using **ThoughtSpot Spotter**\n\n`);
     return answers;
 }
 
