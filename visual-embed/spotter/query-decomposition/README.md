@@ -9,10 +9,6 @@ This application demonstrates the integration of ThoughtSpot with an AI agent th
 - ThoughtSpot Query decomposition APIs to decompose high level topical questions into data questions.
 - Real-time data analysis and insights
 
-## Demo
-
-Open in [Codesandbox](https://githubbox.com/thoughtspot/developer-examples/tree/main/visual-embed/spotter/query-decomposition)
-
 
 ## Getting Started
 
