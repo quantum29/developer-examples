@@ -5,16 +5,21 @@ const THOUGHTSPOT_HOST: string = process.env.VITE_THOUGHTSPOT_HOST || "";
 
 
 export async function getRelevantQuestions(query: string, additionalContext: string = ''): Promise<string[]> {
-    const questions = await thoughtSpotClient.queryGetDecomposedQuery({
-        nlsRequest: {
-            query: query,
-        },
-        content: [
-            additionalContext,
-        ],
-        worksheetIds: [DATA_SOURCE_ID]
-    })
-    return questions.decomposedQueryResponse?.decomposedQueries?.map((q) => q.query!) || [];
+    try {
+        const questions = await thoughtSpotClient.queryGetDecomposedQuery({
+            nlsRequest: {
+                query: query,
+            },
+            content: [
+                additionalContext,
+            ],
+            worksheetIds: [DATA_SOURCE_ID]
+        })
+        return questions.decomposedQueryResponse?.decomposedQueries?.map((q) => q.query!) || [];
+    } catch (e) {
+        console.error("[DEBUG] Error getting relevant questions: ", e);
+        return ["Error getting relevant questions"];
+    }
 }
 
 export async function getAnswerForQuestion(question: string) {
