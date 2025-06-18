@@ -5,6 +5,8 @@ const THOUGHTSPOT_HOST: string = process.env.VITE_THOUGHTSPOT_HOST || "";
 
 
 export async function getRelevantQuestions(query: string, additionalContext: string = ''): Promise<string[]> {
+    console.log("[DEBUG] Getting relevant questions for query: ", query, "with additional context: ", additionalContext);
+    const startTime = Date.now();
     try {
         const questions = await thoughtSpotClient.queryGetDecomposedQuery({
             nlsRequest: {
@@ -15,8 +17,12 @@ export async function getRelevantQuestions(query: string, additionalContext: str
             ],
             worksheetIds: [DATA_SOURCE_ID]
         })
+        const endTime = Date.now();
+        console.log("[DEBUG] Time taken to get relevant questions: ", endTime - startTime, "ms");
         return questions.decomposedQueryResponse?.decomposedQueries?.map((q) => q.query!) || [];
     } catch (e) {
+        const endTime = Date.now();
+        console.log("[DEBUG] Time taken to get relevant questions: ", endTime - startTime, "ms");
         console.error("[DEBUG] Error getting relevant questions: ", e);
         return ["Error getting relevant questions"];
     }
